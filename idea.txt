@@ -62,22 +62,22 @@ print(l[1:3]) # [2, 'andre'] is the output
 
 let is_true: bool = true
 if is_true {
-print("It is true!") # Output: It is true!
+    print("It is true!") # Output: It is true!
 } elif not is_true {
-print("It is not true")
+    print("It is not true")
 } else {
-print("Else")
+    print("Else")
 }
 
 let param: i32 = 5
 
 switch param {
-case 5:
-print("five")
-case 6:
-print("six")
-case \_:
-print(param)
+    case 5:
+        print("five")
+    case 6:
+        print("six")
+    case \_:
+        print(param)
 }
 
 # For loop example
@@ -85,27 +85,27 @@ print(param)
 let numbers: list = [10, 'a', 12, 'b']
 
 for numb in numbers {
-print(numb)
+    print(numb)
 }
 
 for i, n in numbers {
-print(i, n)
+    print(i, n)
 }
 
 # the range is from x to y-1
 
 for i in (0...len(numbers)) {
-print(numbers[i])
+    print(numbers[i])
 }
 
 # 5 is exclusive (so it goes like 0,1,2,3,4)
 
 for i in (0...5, 1) {
-print(i)
+    print(i)
 }
 
 for i in (5...0, -1) {
-print(i)
+    print(i)
 }
 
 # While loop example
@@ -113,23 +113,23 @@ print(i)
 let count: int = 0
 
 while count < 5 {
-print(count)
-count += 1
+    print(count)
+    count += 1
 }
 
 let counter: int = 0
 
 while true {
-if counter == 5 {
-return "done"
-}
-counter += 1
+    if counter == 5 {
+        return "done"
+    }
+    counter += 1
 }
 
-# Function definition using fn keyword and strict typing
+# Function definition using func keyword and strict typing
 
-fn greet(name: str) -> str {
-return f"Hello {name}!"
+func greet(name: str) -> str {
+    return f"Hello {name}!"
 }
 
 # Using the greet function with type annotations
@@ -139,12 +139,12 @@ result: str = greet("Andre") # outputs "Hello Andre!"
 # error handling
 
 try {
-let x: i32 = 5
+    let x: i32 = 5
 if x == "5" {
-print("x is a string")
+    print("x is a string")
 }
 } catch {
-print("error caught")
+    print("error caught")
 } final {
-print("finish")
+    print("finish")
 }

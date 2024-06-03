@@ -118,7 +118,7 @@ while true {
 }
 
 # Function definition using fn keyword and strict typing
-fn greet(name: str) -> str {
+func greet(name: str) -> str {
     return f"Hello {name}!"
 }
 
